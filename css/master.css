@@ -18,7 +18,7 @@ h2 {
 
 p {
   line-height: 25px;
-  margin: 25px 0px;
+  margin: 0px;
 }
 
 img {
@@ -34,10 +34,10 @@ a:visited {
   color: #000000;
 }
 a:hover {
-  color: #ff0000;
+  color: #fa3e00;
 }
 a:active {
-  color: #ff0000;
+  color: #fa3e00;
 }
 
 .container {
@@ -52,58 +52,59 @@ a:active {
     }
 }
 
+.element {
+  margin: 25px 0px;
+}
+
 .header-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0px;
+}
+@media screen and (max-width: 600px) {
+  .header-section {
+    margin-bottom: 20px;
+  }
+}
+
+.header-img {
+  margin: 0px 50px 0px 0px; width: 250px; height: 250px;
+}
+@media screen and (max-width: 600px) {
+  .header-img {
+    margin: 0px 25px;
+  }
 }
 
 .contacts {
-  padding: 5px 0px;
-  margin: 25px 0px;
+  margin-bottom: 10px;
 }
 .contacts a {
   padding: 0px 25px 0px 0px;
 }
 
-@media screen and (max-width: 600px) {
-  .contacts {
-    text-align: center;
-  }
-  .contacts a {
-    padding: 0px 10px;
-  }
-}
-
-.project-element {
-
-}
-
-.desc-frame {
-  margin: 7px 0px;
+.desc-title {
+  margin: 5px 0px;
   display: flex;
   align-items: left;
   justify-content: left;
   flex-wrap: wrap;
 }
-.desc-frame p {
-  line-height: 25px;
-  margin: 5px 0px;
-}
-.desc-frame h3{
+.desc-title h3{
   font-weight: normal;
   color: #000000;
-  margin: 5px 0px;
+  margin: 0px;
   padding: 0px 10px 0px 0px;
 }
 
-.img-frame {
+.proj-img {
   box-shadow: 0px 0px 5px #a1a1a1;
   position: relative;
   width: 100%;
-  margin: 13px 0px 15px 0px;
+  margin: 15px 0px;
 }
-.img-frame:hover {
+.proj-img:hover {
   box-shadow: 0px 0px 8px #a1a1a1;
 }
