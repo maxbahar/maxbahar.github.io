@@ -34,10 +34,10 @@ a:visited {
   color: #000000;
 }
 a:hover {
-  color: #fa3e00;
+  color: #fa1100;
 }
 a:active {
-  color: #fa3e00;
+  color: #fa1100;
 }
 
 .container {
@@ -100,11 +100,18 @@ a:active {
 }
 
 .proj-img {
+  margin: 15px 0px;
+}
+.proj-img img{
   box-shadow: 0px 0px 5px #a1a1a1;
   position: relative;
   width: 100%;
-  margin: 15px 0px;
 }
-.proj-img:hover {
+.proj-img img:hover {
   box-shadow: 0px 0px 8px #a1a1a1;
+}
+.proj-img p {
+  padding: 0px 10px;
+  font-style: italic;
+  font-size: 12px;
 }
