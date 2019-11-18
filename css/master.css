@@ -108,10 +108,19 @@ a:active {
   width: 100%;
 }
 .proj-img img:hover {
-  box-shadow: 0px 0px 8px #a1a1a1;
+  animation: hover-anim 0.2s linear 0s 1 forwards alternate;
+  /* Check!!!!! */
 }
 .proj-img p {
   padding: 0px 10px;
   font-style: italic;
   font-size: 12px;
+}
+@keyframes hover-anim {
+  from {
+    box-shadow: 0px 0px 5px #a1a1a1;
+  }
+  to {
+    box-shadow: 0px 0px 8px #a1a1a1;
+  }
 }
