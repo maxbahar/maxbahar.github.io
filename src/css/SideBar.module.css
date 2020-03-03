@@ -1,0 +1,39 @@
+.container {
+    position: fixed;
+    margin-left: 150px;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details > p {
+    display: block;
+    margin: 5px 0px;
+}
+
+.email {
+    display: block;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+.links {
+    
+}
+
+.header {
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-left: 8px solid #DFB0FF;
+}   
+
+.header > h1 {
+    margin: 0px 0px 20px 0px;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    display: block;
+}
