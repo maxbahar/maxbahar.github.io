@@ -1,0 +1,109 @@
+{
+    "about" : {
+        "name" : "Max Bahar",
+        "title" : "Junior at Boston College",
+        "email" : "max.a.bahar@gmail.com",
+        "address" : "Chestnut Hill, MA 02467",
+        "photo" : "assets/profile.jpg",
+        "resume" : "assets/resume.pdf",
+        "links" : [
+            {
+                "label" : "LinkedIn",
+                "path" : "https://www.linkedin.com/in/maximilian-bahar/",
+                "icon" : "fab fa-linkedin"
+            },
+            {
+                "label" : "GitHub",
+                "path" : "https://github.com/maxbahar",
+                "icon" : "fab fa-github-square"
+            }, 
+            {
+                "label" : "Spotify",
+                "path" : "https://open.spotify.com/user/maxbahar?si=zP09r3HLSiqFIIJHmlLjLg",
+                "icon" : "fab fa-spotify"
+            }
+        ],
+        "description": "Hi! My name is Max and I’m a Junior studying Economics and Computer Science at Boston College. I grew up in Jakarta, Indonesia and am passionate about issues of global equity and equal access to opportunity. Last year I volunteered at Victory House, a rehabilitation center located in Downtown Boston. I also worked for the City of Boston's Digital Team over the summer as part of the Corcoran Center Summer Internship. Currently, I’m a Teaching Assistant for BC's Computer Science Department and conducting research as part of BC’s Applied Health Economics course."    },
+    "projects" : [
+        {
+            "id":"carbon",
+            "title": "Annual Estimations of Personal Energy Usage and CO2 Emissions",
+            "image": "assets/photo_carbon.jpg",
+            "source" : "UCL's Sustainable Energy Course",
+            "timeframe" : "Fall 2019",
+            "tags":["Coursework", "Research", "Study Abroad"],
+            "materials": [
+                { 
+                    "label": "Paper",
+                    "path": "assets/paper_carbon.pdf",
+                    "icon" : "far fa-file-alt"
+                },
+                { 
+                    "label": "Personal Data",
+                    "link": "https://docs.google.com/spreadsheets/d/1eHDQes-Ci0320EgzE8A0wNTg_WzqbODRbwlu7aHnxDI/edit?usp=sharing",
+                    "icon" : "fas fa-table"
+                },
+                { 
+                    "label": "Class Data",
+                    "link": "https://docs.google.com/spreadsheets/d/1WePo1oxZxXERrPLpXWyiwweY7BkEPhS7UHkcZDYV9yw/edit?usp=sharing",
+                    "icon" : "fas fa-table"
+                }
+            ],
+            "description" : "As part of the Sustainable Energy course at UCL, I calculated my personal energy expenditures and carbon emissions through estimates. This project helped me take a more methodical approach to data management and made me consider the environmental impacts my personal life has on the wellbeing of the planet."                
+        },
+        {
+            "id":"corcoran",
+            "title": "City of Boston Digital Team Fellowship",
+            "image": "assets/photo_corcoran.jpg",
+            "source" : "Corcoran Center Summer Internship",
+            "timeframe" : "Summer 2019",
+            "tags":["Internship", "Summer"],
+            "materials": [
+                { 
+                    "label": "Details",
+                    "link": "https://www.bc.edu/bc-web/schools/carroll-school/sites/corcoran-center/Internships.html",
+                    "icon" : "fas fa-external-link-alt"
+                },
+                {
+                    "label": "Presentation",
+                    "path": "assets/presentation_corcoran.pdf",
+                    "icon" : "far fa-file-alt"
+                },
+                {
+                    "label": "Poster",
+                    "path": "assets/poster_corcoran.jpg",
+                    "icon" : "far fa-file-image"
+                }
+               
+            ],
+            "description" : "I worked on research around the City of Boston Trash Day app. The City plans to use the research to provide better information about trash and recycling to constituents. My work included user testing and surveying residents. I was also a project lead for the Digital Team’s partnership with General Assembly over the summer, and worked on testing the Boston Info Alexa Skill. The new skill will allow constituents to access official City information from their Alexa devices."
+        },
+        {
+            "id":"cigarette",
+            "title": "Effect of Cigarette Price, Annual Income, Age, and Years of Schooling on the Consumption of Cigarettes",
+            "image": "assets/photo_cigarette.jpg",
+            "source" : "BC's Economics Statistics Course",
+            "timeframe" : "Spring 2018",
+            "tags":["Coursework", "Research"],
+            "materials": [
+                { 
+                    "label": "Paper",
+                    "path": "assets/paper_cigarette.pdf",
+                    "icon" : "far fa-file-alt"
+                },
+                { 
+                    "label": "Do File",
+                    "path": "assets/cigarette.do",
+                    "icon" : "fas fa-download"
+                },
+                { 
+                    "label": "Class Data",
+                    "link": "https://docs.google.com/spreadsheets/d/1WePo1oxZxXERrPLpXWyiwweY7BkEPhS7UHkcZDYV9yw/edit?usp=sharing",
+                    "icon" : "fas fa-download"
+                }
+            ],
+            "description" : "For our final project in Economics Statistics at BC, we used Stata and datasets from Wooldridge to examine the possible effects of cigarette pricing, annual income, age, and years of schooling on the consumption of cigarettes. Using linear regression techniques, we found that these variables have small effects on cigarette consumption. But, we did find that regulatory laws have a significant effect on cigarette consumption.",
+            "authors" : "Max Bahar, Jordan Derbort, Emily Mungovan"
+        }
+    ]
+}
