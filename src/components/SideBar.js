@@ -16,6 +16,7 @@ function SideBar(props) {
                 <a className={css.email} href={"mailto:" + me.email}>{me.email}</a>
             </div>
             <Links links={me.links}/>
+            <a className={css.resume} href={me.resume}>Resume</a>
             {/* <NavLinks resume={me.resume}/> */}
         </div>
     );
