@@ -1,5 +1,5 @@
 .container {
-    margin: 30px 0px;
+    margin: 50px 0px;
 }
 
 .main {
@@ -7,4 +7,11 @@
     left: 450px;
     margin-right: 150px;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main{
+        left: 0;
+        margin: 30px;
+    }
 }

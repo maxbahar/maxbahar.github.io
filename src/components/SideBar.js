@@ -1,6 +1,5 @@
 import React from 'react';
 import css from 'css/SideBar.module.css';
-import NavLinks from 'components/NavLinks';
 import Links from 'components/Links';
 import publicUrl from 'utils/publicUrl';
 
@@ -17,7 +16,6 @@ function SideBar(props) {
             </div>
             <Links links={me.links}/>
             <a className={css.resume} href={me.resume}>Resume</a>
-            {/* <NavLinks resume={me.resume}/> */}
         </div>
     );
 }

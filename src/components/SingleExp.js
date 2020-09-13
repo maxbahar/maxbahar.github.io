@@ -1,5 +1,5 @@
 import React from 'react';
-import css from 'css/SingleProject.module.css';
+import css from 'css/SingleExp.module.css';
 import Links from 'components/Links';
 
 function SingleProject(props) {
@@ -8,8 +8,11 @@ function SingleProject(props) {
         <div className={css.container}>
             <div className={css.desc}>
                 <h2>{current.title}</h2>
-                <p className={css.source}>{current.source}</p>
-                <p>{current.timeframe}</p>
+                {current.people && 
+                <p>{current.people}</p>
+                }
+                <p className={css.tag}>{current.tag}</p>
+                <p className={css.source}>{current.source}, {current.timeframe}</p>
                 <Links links={current.materials}/>
                 <p className={css.text}>{current.description}</p>
             </div>

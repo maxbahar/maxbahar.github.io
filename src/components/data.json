@@ -23,33 +23,35 @@
                 "icon" : "fab fa-spotify"
             }
         ],
-        "description": "Hi! My name is Max and I’m a Junior studying Economics and Computer Science at Boston College. I grew up in Jakarta, Indonesia and am passionate about issues of global equity and equal access to opportunity. Last year I volunteered at Victory House, a rehabilitation center located in Downtown Boston. I also worked for the City of Boston's Digital Team over the summer as part of the Corcoran Center Summer Internship. Currently, I’m a Teaching Assistant for BC's Computer Science Department and conducting research as part of BC’s Applied Health Economics course."    },
-    "projects" : [
+        "description": "Max Bahar is a Senior studying Economics and Computer Science at Boston College. He grew up in Jakarta, Indonesia and is passionate about. Currently, he is in the midst of his Senior Thesis and working as a Research Assistant for Professor Paul Cichello of BC's Economics Department."    },
+    "experience" : [
         {
-            "id":"carbon",
-            "title": "Annual Estimations of Personal Energy Usage and CO2 Emissions",
-            "image": "assets/photo_carbon.jpg",
-            "source" : "UCL's Sustainable Energy Course",
-            "timeframe" : "Fall 2019",
-            "tags":["Coursework", "Research", "Study Abroad"],
+            "id":"health",
+            "title": "The Effect of Health Insurance Type on Stroke Diagnosis",
+            "people" : "Dawn Junet Fazon Sta Ana, Sitora Raupova",
+            "image": "assets/photo_health.jpg",
+            "source" : "Applied Health Economics Course",
+            "timeframe" : "Spring 2020",
+            "tag": "Research Project",
             "materials": [
-                { 
+                {
                     "label": "Paper",
-                    "path": "assets/paper_carbon.pdf",
-                    "icon" : "far fa-file-alt"
+                    "link": "https://drive.google.com/file/d/1pxd4RYMtZHFtcdGH3cRwCF2Y4GAxy2l0/view?usp=sharing",
+                    "icon" : "fas fa-external-link-alt"
                 },
-                { 
-                    "label": "Personal Data",
-                    "link": "https://docs.google.com/spreadsheets/d/1eHDQes-Ci0320EgzE8A0wNTg_WzqbODRbwlu7aHnxDI/edit?usp=sharing",
-                    "icon" : "fas fa-table"
+                {
+                    "label": "Complete Files",
+                    "link": "https://drive.google.com/file/d/1AKi2WVTnbNwFvL0ZxDY1UIU5mqzvkQsF/view?usp=sharing",
+                    "icon" : "fas fa-external-link-alt"
                 },
-                { 
-                    "label": "Class Data",
-                    "link": "https://docs.google.com/spreadsheets/d/1WePo1oxZxXERrPLpXWyiwweY7BkEPhS7UHkcZDYV9yw/edit?usp=sharing",
-                    "icon" : "fas fa-table"
+                {
+                    "label": "Slides",
+                    "link": "https://docs.google.com/presentation/d/1AA6CP_MDeBVdUI5FrcFoYWci2-fC1Nn_5b_bKuNCEw4/edit?usp=sharing",
+                    "icon" : "fas fa-external-link-alt"
                 }
+               
             ],
-            "description" : "As part of the Sustainable Energy course at UCL, I calculated my personal energy expenditures and carbon emissions through estimates. This project helped me take a more methodical approach to data management and made me consider the environmental impacts my personal life has on the wellbeing of the planet."                
+            "description" : "Over the course of a semester, we completed an original research project that examined the causal effects of health insurance type on stroke diagnosis in the future. We used STATA and the Medical Expenditure Panel Survey to conduct an OLS regression using a time-lagged insurance variable. Although a class-based research project pales in comparison to more advanced research papers, I learned a lot about the research process and the many unexpected obstacles that may come up."
         },
         {
             "id":"corcoran",
@@ -57,7 +59,7 @@
             "image": "assets/photo_corcoran.jpg",
             "source" : "Corcoran Center Summer Internship",
             "timeframe" : "Summer 2019",
-            "tags":["Internship", "Summer"],
+            "tag": "Internship",
             "materials": [
                 { 
                     "label": "Details",
@@ -76,34 +78,7 @@
                 }
                
             ],
-            "description" : "I worked on research around the City of Boston Trash Day app. The City plans to use the research to provide better information about trash and recycling to constituents. My work included user testing and surveying residents. I was also a project lead for the Digital Team’s partnership with General Assembly over the summer, and worked on testing the Boston Info Alexa Skill. The new skill will allow constituents to access official City information from their Alexa devices."
-        },
-        {
-            "id":"cigarette",
-            "title": "Effect of Cigarette Price, Annual Income, Age, and Years of Schooling on the Consumption of Cigarettes",
-            "image": "assets/photo_cigarette.jpg",
-            "source" : "BC's Economics Statistics Course",
-            "timeframe" : "Spring 2018",
-            "tags":["Coursework", "Research"],
-            "materials": [
-                { 
-                    "label": "Paper",
-                    "path": "assets/paper_cigarette.pdf",
-                    "icon" : "far fa-file-alt"
-                },
-                { 
-                    "label": "Do File",
-                    "path": "assets/cigarette.do",
-                    "icon" : "fas fa-download"
-                },
-                { 
-                    "label": "Class Data",
-                    "link": "https://docs.google.com/spreadsheets/d/1WePo1oxZxXERrPLpXWyiwweY7BkEPhS7UHkcZDYV9yw/edit?usp=sharing",
-                    "icon" : "fas fa-download"
-                }
-            ],
-            "description" : "For our final project in Economics Statistics at BC, we used Stata and datasets from Wooldridge to examine the possible effects of cigarette pricing, annual income, age, and years of schooling on the consumption of cigarettes. Using linear regression techniques, we found that these variables have small effects on cigarette consumption. But, we did find that regulatory laws have a significant effect on cigarette consumption.",
-            "authors" : "Max Bahar, Jordan Derbort, Emily Mungovan"
+            "description" : "At City Hall, I assessed the efficacy of the Boston Trash Day App through the analysis of online statistics, user testing, and an online survey. My work helped inform the city's decisions regarding how the city plans to communicate waste and recycling information. In addition, I also helped the city launch an RFP for User Experience design and conduct detailed quality assurance testing of the city's website migration and Alexa Skill."
         }
     ]
 }

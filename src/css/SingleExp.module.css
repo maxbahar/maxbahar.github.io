@@ -4,14 +4,15 @@
 
 .desc > .text {
     margin-top: 15px;
+    line-height: 1.5em;
 }
 
 .desc {
     margin: 20px 0px;
 }
 
-.desc > h2 {
-    margin: 0px 0px 10px 0px;
+h2 {
+    margin: 0px 0px 7px 0px;
 }
 
 .desc > p {
@@ -25,4 +26,15 @@
 
 .source {
     font-style: italic;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0px 0px 10px 0px;
+}
+
+.tag {
+    font-size: large;
 }

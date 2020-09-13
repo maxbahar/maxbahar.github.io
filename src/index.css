@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
@@ -8,8 +12,17 @@ h1, h2 {
   font-weight: bold;
 }
 
-a {
+a:link {
   color: #000000;
+}
+a:visited {
+  color: #404040;
+}
+a:hover {
+  color: #5e5ece;
+}
+a:active {
+  color: #6eb7c7;
 }
 
 p {

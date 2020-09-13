@@ -2,6 +2,14 @@
     position: fixed;
     margin-left: 150px;
 }
+@media only screen and (max-width: 1000px) {
+    .container {
+        position: relative;
+        margin: auto;
+        display: block;
+        width: 250px;
+    }
+}
 
 .details {
     margin-top: 20px;
@@ -19,7 +27,7 @@
 }
 
 .links {
-    
+    margin: 0px 0px 0px 0px;
 }
 
 .header {
@@ -40,5 +48,6 @@
 
 .resume {
     display: block;
-    margin-top: 15px;
+    margin-top: 5px;
 }
+
