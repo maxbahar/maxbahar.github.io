@@ -1,0 +1,78 @@
+/* General CSS */
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Header CSS */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+.header a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #7899D4;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+.header a:hover {
+    color: #ED6A5A;
+}
+.spacer {
+    margin: 0px 10px;
+}
+
+/* Divider CSS */
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #000;
+}
+.divider:not(:empty)::before {
+    margin-right: 1.25em;
+    flex: 0.05;
+}
+.divider:not(:empty)::after {
+    margin-left: 1.25em;
+}
+.social-btns a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.social-btns .btn {
+    margin-bottom: 10px;
+    background-color: #7899D4;
+    border-color: #7899D4;
+}
+.social-btns .btn:hover {
+    background-color: #ED6A5A;
+    border-color: #ED6A5A;
+}
+.bio-img {
+    max-width: 300px;
+    width: 100%;
+}
