@@ -59,7 +59,6 @@ p {
     margin-left: 1.25em;
 }
 .social-btns a {
-    margin-right: 10px;
     text-decoration: none;
     color: white;
 }
@@ -75,4 +74,38 @@ p {
 .bio-img {
     max-width: 300px;
     width: 100%;
+}
+
+/* Card CSS */
+
+.work-card {
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f1f1f1;
+}
+
+.work-img {
+    width: 100%;
+    height: auto;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; */
+}
+
+/* .work-img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    opacity: 0.9; 
+} */
+
+.work-title {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.tech-container .tech {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.tech-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
