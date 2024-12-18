@@ -1,0 +1,133 @@
+/* General CSS */
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: #ED6A5A;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    font-weight: bold;
+}
+a:hover {
+    color: #754668;
+}
+
+
+/* Header CSS */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+.header a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: #7899D4;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+.header a:hover {
+    color: #ED6A5A;
+}
+.spacer {
+    margin: 0px 10px;
+}
+
+/* Divider CSS */
+
+.divider {
+    display: flex;
+    align-items: center;
+    /* margin: 20px 0px; */
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #000;
+}
+.divider:not(:empty)::before {
+    margin-right: 1.25em;
+    flex: 0.05;
+}
+.divider:not(:empty)::after {
+    margin-left: 1.25em;
+}
+
+/* Intro Buttons */
+
+.social-btns a {
+    text-decoration: none;
+    color: white;
+}
+.social-btns .btn {
+    background-color: #7899D4;
+    border-color: #7899D4;
+}
+.social-btns .btn:hover {
+    background-color: #ED6A5A;
+    border-color: #ED6A5A;
+}
+.bio-img {
+    max-width: 300px;
+    width: 100%;
+}
+.intro {
+    font-family: 'Roboto Mono'; 
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Card CSS */
+
+.work-card {
+    padding: 16px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.work-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    opacity: 0.9; 
+}
+
+.work-img {
+    width: 100%;
+    height: auto;
+}
+
+.work-title > h5{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.tech-container .tech {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.tech-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-img {
+    height: 1.5rem;
+    width: auto;
+    max-width: 1.5rem;
+}
