@@ -20,9 +20,11 @@
 </head>
 <body>
 
+	<!-- https://chatgpt.com/c/6761ae92-3dd4-8008-9308-480553c45d4a -->
+
     <div class="container-fluid my-5">
 		<div class="row justify-content-center">
-			<div class="col-md-6">
+			<div class="col-lg-9 col-xxl-7">
 
 				<!-- Header -->
 				<div class="header">
@@ -35,148 +37,142 @@
 				</div>
 
 				<!-- Divider About Me -->
-				<div class="divider" id="about">
+				<div class="divider mt-4 mb-3" id="about">
 					<h2>About</h2>
 				</div>
 		
 				<!-- Bio section -->
-				<div class="row d-flex">
+				<div class="row d-flex align-items-center justify-content-center">
 
 					<!-- Headshot -->
 					<div class="col-auto">
 						<img src="./img/headshot1_sq.jpg" class="img-fluid rounded bio-img">
+					</div>
+
+					<!-- Bio Text -->
+					<div class="col">
+						<div class="mb-2 mt-2 mt-md-0 intro">Hi, I'm Max!</div>
+						<p class="mb-2">I'm a <a href="https://seas.harvard.edu/masters-data-science" target="_blank">Data Science Master's student at Harvard</a>, building technical expertise to address climate change and advance sustainability. My studies focus on tackling climate energy challenges and designing effective models for climate solutions.</p>
+						<p class="mb-2">Previously, I worked as an <a href="https://www.caliper.com/author/max-bahar/default.htm" target="_blank">Analyst at Caliper</a>, where I used geospatial data to support diverse sectors like healthcare, real estate, and political redistricting. I also trained Fortune 500 companies and government clients to apply mapping insights to their work.</p>
+						<p class="mb-2">I'm passionate about leveraging data science to tackle climate challenges, drive sustainable practices, and support impactful decisions.</p>
 						<!-- Social buttons -->
-						<div class="social-btns mt-4 d-flex justify-content-center">
+						<div class="social-btns d-flex justify-content-left">
 							<a href="https://www.linkedin.com/in/maximilian-bahar/" target="_blank" class="btn btn-primary" style="margin-right: 10px">LinkedIn</a>
 							<a href="https://github.com/maxbahar" target="_blank" class="btn btn-primary">GitHub</a>
 							<a href="./data/Max Bahar Resume Public.pdf" target="_blank" class="btn btn-primary" style="margin-left: 10px">Resume</a>
 						</div>
 					</div>
 					
-
-					<!-- Bio Text -->
-					<div class="col">
-
-						<p class="mb-2">I am a Master’s student in Data Science at Harvard, where I am developing the technical skills needed to address climate change and support sustainability efforts. My coursework has deepened my understanding of climate energy challenges and key considerations in building effective models to support climate solutions.</p>
-						<p class="mb-2">Previously, I worked as an Analyst at Caliper, supporting clients with geospatial data analysis across a broad range of sectors, including healthcare, real estate, and political redistricting. I also provided training and support to clients from Fortune 500 companies and government organizations, helping them better understand and apply mapping insights within their own work.</p>
-						<p class="mb-2">I am especially excited about the work at the intersection of data science and climate change, where I hope to contribute to projects that use data to tackle climate challenges, promote sustainable practices, and inform impactful decision-making.</p>
-
-
-					</div>
-					
 				</div>
 		
 				<!-- Divider Featured Work -->
-				<div class="divider" id="featured-work">
+				<div class="divider my-4" id="featured-work">
 					<h2>Featured Work</h2>
 				</div>
 
 				<!-- Tropical Cyclone Modeling -->
 				<div class="container my-4 g-0">
-					<div class="work-card">
+					<div class="work-card rounded">
 
-						<!-- Link to the work -->
+						<!-- Image of work-->
 						<div class="mb-3">
-							<a href="#" target="_blank">
 								<img src="./img/tc_plot.png" class="work-img rounded">
-							</a>
 						</div>
 			
 						<!-- Title and Date -->
-						<div class="mb-2">
-							<h5 class="work-title">Simulating Tropical Cyclone Potential Intensity</h5>
+						<div class="mb-2 work-title">
+							<h5>Simulating Tropical Cyclone Potential Intensity</h5>
 							<em>December 2024</em>
 						</div>
-			
+
 						<!-- Description -->
-						<p class="mb-2">This project examines how maximum potential intensity (PI), a theoretical upper limit on tropical cyclone strength, evolves under different climate scenarios in the Gulf of Mexico. Using data from the Coupled Model Intercomparison Project Phase 6 (CMIP6) and the pyPI Python library, we calculate PI based on key climate variables, including sea surface temperature, atmospheric temperature, mixing ratios, and sea-level pressure.</p>
-						<p class="mb-2">Results show that PI increases across all Shared Socioeconomic Pathway (SSP) scenarios, with the most severe scenario, SSP5-8.5, exhibiting the highest rates of intensification. Spatial analysis reveals stronger PI increases in the southern region of the Gulf of Mexico, corresponding to regions of higher sea surface temperatures. Our findings emphasize the persistent risk of stronger tropical cyclones, even under conservative estimates of climate conditions, and highlight the importance of further validation using empirical data and additional model ensemble members.</p>
+						<p class="mb-2">This project explores how tropical cyclone strength evolves under varying climate scenarios in the Gulf of Mexico. Leveraging CMIP6 climate model data, we calculate the Maximum Potential Intensity (PI) using key variables like sea surface temperature and atmospheric conditions. The results highlight significant intensification trends, especially under severe climate scenarios, emphasizing the growing risk of stronger storms. The project includes a Python library, <em>tc-potential</em>, with tools for data fetching, analysis, and visualization, offering a streamlined workflow for understanding cyclone dynamics.</p>
+						<p class="mb-2"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">Check out the repository</a> for more details and installation instructions!</p  >
 			
 						<!-- Badges -->
 						<div class="tech-container mt-2">
-							<div class="tech me-3">Python</div>
+							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
 						</div>
 					</div>
 				</div>
+
 
 				<!-- Voter Turnout -->
 				<div class="container my-4 g-0">
-					<div class="work-card">
+					<div class="work-card rounded">
 
-						<!-- Link to the work -->
+						<!-- Image of work-->
 						<div class="mb-3">
-							<a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">
 								<img src="./img/voter_turnout.png" class="work-img rounded">
-							</a>
 						</div>
 
 						<!-- Title and Date -->
-						<div class="mb-2">
-							<h5 class="work-title">Voter Turnout and Demographics in Massachusetts</h5>
+						<div class="mb-2 work-title">
+							<h5>Voter Turnout and Demographics in Massachusetts</h5>
 							<em>December 2024</em>
 						</div>
 
 						<!-- Description -->
-						<p class="mb-2">Text here.</p>
+						<p class="mb-2">This project examines how demographics influenced voter turnout in Massachusetts during the 2020 election. Using interactive maps and a Random Forest model, it highlights key drivers like income, ethnicity, and language, revealing disparities in voter engagement. Explore the data, compare predictions, and discover actionable strategies to make voting more equitable.</p>
+						<p class="mb-2"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">Check out the interactive tool</a> to learn more!</p>
 
 						<!-- Badges -->
 						<div class="tech-container mt-2">
-							<div class="tech me-3">Python</div>
-							<div class="tech me-3">D3.js</div>
+							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+							<div class="tech me-3"><img src="./img/d3.png" class="tech-img me-2">D3.js</div>
 						</div>
 					</div>
 				</div>
-
+				
 				<!-- Earthquake Analysis -->
 				<div class="container my-4 g-0">
-					<div class="work-card">
+					<div class="work-card rounded">
 
-						<!-- Link to the work -->
+						<!-- Image of work-->
 						<div class="mb-3">
-							<a href="https://www.caliper.com/maptitude/blog/how-mapping-software-helps-us-analyze-earthquakes/default.htm" target="_blank">
-								<img src="./img/???" class="work-img rounded">
-							</a>
+							<img src="./img/earthquakes.webp" class="work-img rounded">
 						</div>
 
 						<!-- Title and Date -->
-						<div class="mb-2">
-							<h5 class="work-title">Analyzing Earthquakes with Mapping Software</h5>
+						<div class="mb-2 work-title">
+							<h5>Analyzing Earthquakes with Mapping Software</h5>
 							<em>August 2023</em>
 						</div>
 
 						<!-- Description -->
-						<p class="mb-2">Text here.</p>
+						<p class="mb-2">Using earthquake data from the United States Geological Survey (USGS), I explore how Maptitude mapping software can be used to analyze the locations, frequency, and depth of earthquakes. As an example, I analyzed the relationship between the prevalence of earthquakes and the location of wastewater injection sites in Oklahoma, finding evidence of spatial correlation.</p>
+						<p class="mb-2"><a href="https://www.caliper.com/maptitude/blog/how-mapping-software-helps-us-analyze-earthquakes/default.htm" target="_blank">Check out the blog post</a> to learn more!</p>
 
 						<!-- Badges -->
 						<div class="tech-container mt-2">
-							<div class="tech me-3">Maptitude</div>
+							<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Albertsons and Kroger -->
 				<div class="container my-4 g-0">
-					<div class="work-card">
+					<div class="work-card rounded">
 
-						<!-- Link to the work -->
+						<!-- Image of work-->
 						<div class="mb-3">
-							<a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">
-								<img src="./img/???" class="work-img rounded">
-							</a>
+							<img src="./img/albertsons-kroger.webp" class="work-img rounded">
 						</div>
 
 						<!-- Title and Date -->
-						<div class="mb-2">
-							<h5 class="work-title">Albertsons and Kroger Geographic Market Analysis</h5>
+						<div class="mb-2 work-title">
+							<h5>Albertsons and Kroger Geographic Market Analysis</h5>
 							<em>October 2022</em>
 						</div>
 
 						<!-- Description -->
-						<p class="mb-2">Text here.</p>
+						<p class="mb-2">To estimate the impact of the Albertsons and Kroger merger, I mapped Albertsons' and Kroger's locations (including their subsidiary brands), compared their geographic overlap, and estimated the population and demographics of those near the stores. I found that there were areas of significant overlap between the two companies (e.g. Los Angeles, Dallas, Washington DC) but that the companies' locations target different demographic segments.</p>
+						<p><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">Check out the blog post</a> to learn more!</p>
 
 						<!-- Badges -->
 						<div class="tech-container mt-2">
-							<div class="tech me-3">Maptitude</div>
+							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+							<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
 						</div>
 					</div>
 				</div>
@@ -184,28 +180,27 @@
 				
 				<!-- Senior Thesis -->
 				<div class="container my-4 g-0">
-					<div class="work-card">
+					<div class="work-card rounded">
 
-						<!-- Link to the work -->
+						<!-- Image of work-->
 						<div class="mb-3">
-							<a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">
-								<img src="./img/???" class="work-img rounded">
-							</a>
+							<img src="./img/parental-migration.png" class="work-img rounded">
 						</div>
 
 						<!-- Title and Date -->
-						<div class="mb-2">
+						<div class="mb-2 work-title">
 							<h5 class="work-title">Long-term Effects of Parental Migration on Income:
 								Evidence from Indonesia</h5>
 							<em>May 2021</em>
 						</div>
 
 						<!-- Description -->
-						<p class="mb-2">Text here.</p>
+						<p class="mb-2">For my undergraduate senior thesis, I sought to estimate the impact of parental migration on their children's future income. I used the Indonesian Family Life Survey (IFLS), a panel dataset examining the lives of 22,000 individuals over the span of 21 years and ran an instrumental variable regression using region-level migration rates to predict parental migration. Although the results of the study were ambiguous, with large standard errors affecting the coefficient of interest, I was able to show that a significant portion of parental migration in the IFLS was driven by non-labor reasons.</p>
+						<p><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">Check out the full paper</a> to learn more!</p>
 
 						<!-- Badges -->
 						<div class="tech-container mt-2">
-							<div class="tech me-3">Maptitude</div>
+							<div class="tech me-3"><img src="./img/stata.svg" class="tech-img me-2">STATA</div>
 						</div>
 					</div>
 				</div>
