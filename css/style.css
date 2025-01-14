@@ -49,6 +49,12 @@ a:hover {
     margin: 0px 10px;
 }
 
+/* Bio CSS */
+
+.btn {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
 /* Divider CSS */
 
 .divider {
