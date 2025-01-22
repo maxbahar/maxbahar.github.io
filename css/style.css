@@ -16,6 +16,10 @@ p {
     text-align: justify;
 }
 
+b {
+    color: #ED6A5A;
+}
+
 a {
     color: #ED6A5A;
     transition: color 0.2s ease, background-color 0.2s ease;
