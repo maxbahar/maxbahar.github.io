@@ -66,11 +66,11 @@
 					</div>
 
 					<!-- Bio Text -->
-					<div class="col">
+					<div class="col-md-5 mx-sm-2">
 						<div class="mb-2 mt-2 mt-md-0 intro">Hi, I'm Max!</div>
-						<p class="mb-2">I'm a <b>Data Science Master's student at Harvard</b>, passionate about using data and models to solve complex challenges.</p>
-						<p class="mb-2">Previously, I worked as an <b>Analyst at Caliper</b>, where I leveraged geospatial data to tackle projects in healthcare, real estate, and political redistricting. I also trained Fortune 500 companies and government clients on incorporating mapping insights into their decision-making.</p>
-						<p class="mb-0">I'm excited to contribute to impactful projects, whether driving innovation, solving critical problems, or advancing sustainability solutions.</p>
+						<p class="mb-2">I'm a <b>Data Science Master's student at Harvard</b> with three years of experience in geospatial analytics and machine learning. I specialize in Python, data visualization, and AI, transforming complex datasets into actionable insights.</p>
+						<p class="mb-2">Previously, I was an <b>Analyst at Caliper</b>, where I built data-driven solutions for Fortune 500 clients, automated large-scale geospatial data pipelines, and trained businesses on leveraging analytics for decision-making.</p>
+						<p class="mb-0">I'm passionate about using data science to solve impactful problems—whether in business, sustainability, or innovation.</p>
 					</div>
 					
 				</div>
@@ -80,167 +80,172 @@
 					<h2>Featured Work</h2>
 				</div>
 
-				<!-- Tropical Cyclone Modeling -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
+				<div class="row d-flex justify-content-center">
+					<div class="col-10 col-xl-10">
 
-						<!-- Image of work-->
-						<div class="mb-3">
-								<img src="./img/tc_plot.png" class="work-img rounded">
-						</div>
-			
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5>Simulating Tropical Cyclone Potential Intensity</h5>
-							<em>December 2024</em>
+						<!-- Tropical Cyclone Modeling -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+										<img src="./img/tc_plot.png" class="work-img rounded">
+								</div>
+					
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5>Simulating Tropical Cyclone Potential Intensity</h5>
+									<em>December 2024</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">This project explores how tropical cyclone strength evolves under varying climate scenarios in the Gulf of Mexico. Leveraging CMIP6 climate model data, we calculate the Maximum Potential Intensity (PI) using key variables like sea surface temperature and atmospheric conditions. The results highlight significant intensification trends, especially under severe climate scenarios, emphasizing the growing risk of stronger storms. The project includes a Python library, <em>tc-potential</em>, with tools for data fetching, analysis, and visualization, offering a streamlined workflow for understanding cyclone dynamics.</p>
+								<p class="mb-2"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">Check out the repository</a> for more details and installation instructions!</p  >
+					
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+								</div>
+							</div>
 						</div>
 
-						<!-- Description -->
-						<p class="mb-2">This project explores how tropical cyclone strength evolves under varying climate scenarios in the Gulf of Mexico. Leveraging CMIP6 climate model data, we calculate the Maximum Potential Intensity (PI) using key variables like sea surface temperature and atmospheric conditions. The results highlight significant intensification trends, especially under severe climate scenarios, emphasizing the growing risk of stronger storms. The project includes a Python library, <em>tc-potential</em>, with tools for data fetching, analysis, and visualization, offering a streamlined workflow for understanding cyclone dynamics.</p>
-						<p class="mb-2"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">Check out the repository</a> for more details and installation instructions!</p  >
-			
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+
+						<!-- Voter Turnout -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+										<img src="./img/voter_turnout.png" class="work-img rounded">
+								</div>
+
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5>Voter Turnout and Demographics in Massachusetts</h5>
+									<em>December 2024</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">This project examines how demographics influenced voter turnout in Massachusetts during the 2020 election. Using interactive maps and a Random Forest model, it highlights key drivers like income, ethnicity, and language, revealing disparities in voter engagement. Explore the data, compare predictions, and discover actionable strategies to make voting more equitable.</p>
+								<p class="mb-2"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">Check out the interactive tool</a> to dive deeper into the data!</p>
+
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+									<div class="tech me-3"><img src="./img/d3.png" class="tech-img me-2">D3.js</div>
+								</div>
+							</div>
 						</div>
+						
+						<!-- Earthquake Analysis -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+									<img src="./img/earthquakes.webp" class="work-img rounded">
+								</div>
+
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5>Analyzing Earthquakes with Mapping Software</h5>
+									<em>August 2023</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">Using earthquake data from the United States Geological Survey (USGS), I explore how Maptitude mapping software can be used to analyze the locations, frequency, and depth of earthquakes. As an example, I analyzed the relationship between the prevalence of earthquakes and the location of wastewater injection sites in Oklahoma, finding evidence of spatial correlation.</p>
+								<p class="mb-2"><a href="https://www.caliper.com/maptitude/blog/how-mapping-software-helps-us-analyze-earthquakes/default.htm" target="_blank">Check out the blog post</a> to explore further insights!</p>
+
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Banking Compliance Data -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+									<!-- TODO: ADD IMAGE -->
+									<img src="./img/banking_compliance.png" class="work-img rounded"> 
+								</div>
+
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5>Maptitude Banking Compliance Data</h5>
+									<em>June 2023</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">I processed and integrated banking compliance datasets from the Community Reinvestment Act (CRA) and Home Mortgage Disclosure Act (HMDA), enabling financial institutions to gain actionable insights. The analysis-ready data at county and Census Tract levels supported visualizations of distressed areas, income distribution, and loan trends. Additionally, I developed workflows to streamline the integration of raw Loan Application Register (LAR) data for regulatory analysis.</p>
+								<p><a href="https://www2.caliper.com/store/product/banking-compliance-data/" target="_blank">Check out the product description</a> to get the full details!</p>
+
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
+									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Albertsons and Kroger -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+									<img src="./img/albertsons-kroger.webp" class="work-img rounded">
+								</div>
+
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5>Albertsons and Kroger Geographic Market Analysis</h5>
+									<em>October 2022</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">To estimate the impact of the Albertsons and Kroger merger, I mapped Albertsons' and Kroger's locations (including their subsidiary brands), compared their geographic overlap, and estimated the population and demographics of those near the stores. I found that there were areas of significant overlap between the two companies (e.g. Los Angeles, Dallas, Washington DC) but that the companies' locations target different demographic segments.</p>
+								<p><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">Check out the blog post</a> to get the full story!</p>
+
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Senior Thesis -->
+						<div class="container my-4 g-0">
+							<div class="work-card rounded">
+
+								<!-- Image of work-->
+								<div class="mb-3">
+									<img src="./img/parental-migration.png" class="work-img rounded">
+								</div>
+
+								<!-- Title and Date -->
+								<div class="mb-2 work-title">
+									<h5 class="work-title">Long-term Effects of Parental Migration on Income:
+										Evidence from Indonesia</h5>
+									<em>May 2021</em>
+								</div>
+
+								<!-- Description -->
+								<p class="mb-2">For my undergraduate senior thesis, I sought to estimate the impact of parental migration on their children's future income. I used the Indonesian Family Life Survey (IFLS), a panel dataset examining the lives of 22,000 individuals over the span of 21 years and ran an instrumental variable regression using region-level migration rates to predict parental migration. Although the results of the study were ambiguous, with large standard errors affecting the coefficient of interest, I was able to show that a significant portion of parental migration in the IFLS was driven by non-labor reasons.</p>
+								<p><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">Check out the full paper</a> to review the complete findings!</p>
+
+								<!-- Badges -->
+								<div class="tech-container mt-2">
+									<div class="tech me-3"><img src="./img/stata.svg" class="tech-img me-2">STATA</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
-
-
-				<!-- Voter Turnout -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
-
-						<!-- Image of work-->
-						<div class="mb-3">
-								<img src="./img/voter_turnout.png" class="work-img rounded">
-						</div>
-
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5>Voter Turnout and Demographics in Massachusetts</h5>
-							<em>December 2024</em>
-						</div>
-
-						<!-- Description -->
-						<p class="mb-2">This project examines how demographics influenced voter turnout in Massachusetts during the 2020 election. Using interactive maps and a Random Forest model, it highlights key drivers like income, ethnicity, and language, revealing disparities in voter engagement. Explore the data, compare predictions, and discover actionable strategies to make voting more equitable.</p>
-						<p class="mb-2"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">Check out the interactive tool</a> to dive deeper into the data!</p>
-
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-							<div class="tech me-3"><img src="./img/d3.png" class="tech-img me-2">D3.js</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Earthquake Analysis -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
-
-						<!-- Image of work-->
-						<div class="mb-3">
-							<img src="./img/earthquakes.webp" class="work-img rounded">
-						</div>
-
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5>Analyzing Earthquakes with Mapping Software</h5>
-							<em>August 2023</em>
-						</div>
-
-						<!-- Description -->
-						<p class="mb-2">Using earthquake data from the United States Geological Survey (USGS), I explore how Maptitude mapping software can be used to analyze the locations, frequency, and depth of earthquakes. As an example, I analyzed the relationship between the prevalence of earthquakes and the location of wastewater injection sites in Oklahoma, finding evidence of spatial correlation.</p>
-						<p class="mb-2"><a href="https://www.caliper.com/maptitude/blog/how-mapping-software-helps-us-analyze-earthquakes/default.htm" target="_blank">Check out the blog post</a> to explore further insights!</p>
-
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Banking Compliance Data -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
-
-						<!-- Image of work-->
-						<div class="mb-3">
-							<!-- TODO: ADD IMAGE -->
-							<img src="./img/banking_compliance.png" class="work-img rounded"> 
-						</div>
-
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5>Maptitude Banking Compliance Data</h5>
-							<em>June 2023</em>
-						</div>
-
-						<!-- Description -->
-						<p class="mb-2">I processed and integrated banking compliance datasets from the Community Reinvestment Act (CRA) and Home Mortgage Disclosure Act (HMDA), enabling financial institutions to gain actionable insights. The analysis-ready data at county and Census Tract levels supported visualizations of distressed areas, income distribution, and loan trends. Additionally, I developed workflows to streamline the integration of raw Loan Application Register (LAR) data for regulatory analysis.</p>
-						<p><a href="https://www2.caliper.com/store/product/banking-compliance-data/" target="_blank">Check out the product description</a> to get the full details!</p>
-
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-							<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Albertsons and Kroger -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
-
-						<!-- Image of work-->
-						<div class="mb-3">
-							<img src="./img/albertsons-kroger.webp" class="work-img rounded">
-						</div>
-
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5>Albertsons and Kroger Geographic Market Analysis</h5>
-							<em>October 2022</em>
-						</div>
-
-						<!-- Description -->
-						<p class="mb-2">To estimate the impact of the Albertsons and Kroger merger, I mapped Albertsons' and Kroger's locations (including their subsidiary brands), compared their geographic overlap, and estimated the population and demographics of those near the stores. I found that there were areas of significant overlap between the two companies (e.g. Los Angeles, Dallas, Washington DC) but that the companies' locations target different demographic segments.</p>
-						<p><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">Check out the blog post</a> to get the full story!</p>
-
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Senior Thesis -->
-				<div class="container my-4 g-0">
-					<div class="work-card rounded">
-
-						<!-- Image of work-->
-						<div class="mb-3">
-							<img src="./img/parental-migration.png" class="work-img rounded">
-						</div>
-
-						<!-- Title and Date -->
-						<div class="mb-2 work-title">
-							<h5 class="work-title">Long-term Effects of Parental Migration on Income:
-								Evidence from Indonesia</h5>
-							<em>May 2021</em>
-						</div>
-
-						<!-- Description -->
-						<p class="mb-2">For my undergraduate senior thesis, I sought to estimate the impact of parental migration on their children's future income. I used the Indonesian Family Life Survey (IFLS), a panel dataset examining the lives of 22,000 individuals over the span of 21 years and ran an instrumental variable regression using region-level migration rates to predict parental migration. Although the results of the study were ambiguous, with large standard errors affecting the coefficient of interest, I was able to show that a significant portion of parental migration in the IFLS was driven by non-labor reasons.</p>
-						<p><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">Check out the full paper</a> to review the complete findings!</p>
-
-						<!-- Badges -->
-						<div class="tech-container mt-2">
-							<div class="tech me-3"><img src="./img/stata.svg" class="tech-img me-2">STATA</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
