@@ -1,327 +1,385 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Max Bahar</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max Bahar</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-	<link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-	<!-- Google Fonts for Roboto and Roboto Mono -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Google Fonts for Roboto and Roboto Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-	<!-- https://chatgpt.com/c/6761ae92-3dd4-8008-9308-480553c45d4a -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xxl-8">
 
-    <div class="container-fluid my-5">
-		<div class="row justify-content-center">
-			<div class="col-lg-9 col-xxl-8">
+        <!-- Header -->
+        <div class="header">
+          <h1 class="m-0">Max Bahar</h1>
+          <div>
+            <a href="#about">About</a>
+            <span class="spacer">/</span>
+            <a href="#skills">Skills</a>
+            <span class="spacer">/</span>
+            <a href="#featured-work">Featured Work</a>
+          </div>
+        </div>
 
-				<!-- Header -->
-				<div class="header">
-					<h1 class="m-0">Max Bahar</h1>
-					<div>
-						<a href="#about">About</a>
-						<span class="spacer">/</span>
-						<a href="#featured-work">Featured Work</a>
-					</div>
-				</div>
+        <!-- Divider About Me -->
+        <div class="divider mt-4 mb-3" id="about">
+          <h2>About</h2>
+        </div>
 
-				<!-- Divider About Me -->
-				<div class="divider mt-4 mb-3" id="about">
-					<h2>About</h2>
-				</div>
-		
-				<!-- Bio section -->
-				<div class="row d-flex align-items-center justify-content-center">
+        <!-- Bio section -->
+        <div class="row d-flex align-items-center justify-content-center">
 
-					<!-- Headshot -->
-					<div class="col-auto">
-						<img src="./img/headshot1_sq.jpg" class="img-fluid rounded bio-img">
-						<!-- Social buttons -->
-						<div class="social-btns mt-2 d-flex justify-content-center">
-							<a href="https://www.linkedin.com/in/max-bahar/" target="_blank" class="btn btn-primary p-1 me-2 d-flex align-items-center">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-1" viewBox="0 0 16 16">
-									<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-							  </svg> LinkedIn</a>
-							<a href="https://github.com/maxbahar" target="_blank" class="btn btn-primary p-1 d-flex align-items-center me-2">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-1" viewBox="0 0 16 16">
-									<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-								  </svg> GitHub</a>
-							<a href="./data/Max Bahar Resume Public.pdf" target="_blank" class="btn btn-primary p-1 d-flex align-items-center">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text me-1" viewBox="0 0 16 16">
-									<path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-									<path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
-								  </svg> Resume</a>
-						</div>
-					</div>
+          <!-- Headshot -->
+          <div class="col-12 col-md-auto">
+            <img src="./img/headshot1_sq.jpg" class="img-fluid rounded bio-img d-block mx-auto">
+            <!-- Social buttons -->
+            <div class="social-btns mt-3 d-flex justify-content-center">
+              <a href="https://www.linkedin.com/in/max-bahar/" target="_blank" class="social-pill me-2 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-1" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg> LinkedIn</a>
+              <a href="https://github.com/maxbahar" target="_blank" class="social-pill me-2 d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-1" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg> GitHub</a>
+              <a href="./data/Max Bahar Resume Public.pdf" target="_blank" class="social-pill d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text me-1" viewBox="0 0 16 16">
+                  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                </svg> Resume</a>
+            </div>
+          </div>
 
-					<!-- Bio Text -->
-					<div class="col-md-5 mx-sm-2">
-						<div class="mb-2 mt-2 mt-md-0 intro">Hi, I'm Max!</div>
-						<p class="mb-2">I'm a <b>Data Science Master's student at Harvard</b> with 3+ years of experience in geospatial analytics and machine learning. I specialize in mapping tools and data visualization, helping organizations turn complex datasets into actionable insights.</p>
-						<p class="mb-2">Previously, I was an <b>Analyst at Caliper</b>, where I partnered with Fortune 500 clients to integrate mapping software into business workflows, tailoring our tools to each organization's needs.</p>
-						<p class="mb-0">I'm passionate about applying data-driven platforms - from GIS systems to machine learning models - to solve impactful, real-world challenges.</p>
+          <!-- Bio Text -->
+          <div class="col-12 col-md-7 col-xl-6 col-xxl-6 mt-3 mt-xl-0">
+            <div class="mb-2 mt-2 mt-xl-0 intro">Hi, I'm Max!</div>
 
-						<!-- <p class="mb-2">I'm a <b>Data Science Master's student at Harvard</b> with 3+ years of experience in geospatial analytics and machine learning. I specialize in Python, data visualization, and AI, transforming complex datasets into actionable insights.</p>
-						<p class="mb-2">Previously, I was an <b>Analyst at Caliper</b>, where I built data-driven solutions for Fortune 500 clients, automated large-scale geospatial data pipelines, and trained businesses on leveraging analytics for decision-making.</p>
-						<p class="mb-0">I'm passionate about using data science to solve impactful problems—whether in business, sustainability, or innovation.</p> -->
-					</div>
-					
-				</div>
-		
-				<!-- Divider Featured Work -->
-				<div class="divider my-4" id="featured-work">
-					<h2>Featured Work</h2>
-				</div>
+            <p class="mb-2">
+              I'm a <b>Data Science MS candidate at Harvard</b> (graduating May 2026) with experience in machine learning and data analytics across fintech and geospatial domains. I'm targeting data science roles in <b>Singapore from July 2026</b>.
+            </p>
+            <p class="mb-2">
+              Recently, I interned at <b>GoTo Financial (GoPay)</b> in Jakarta, where I built features for QRIS scam detection at 3M+ transactions per day and contributed to a 58.6% reduction in blocked transactions while sustaining detection performance.
+            </p>
+            <p class="mb-0">
+              Previously, I spent three years at <b>Caliper Corporation</b>, developing geospatial data pipelines and conducting spatial analyses for Fortune 500 clients including Amazon, Optum, and Assa Abloy.
+            </p>
+          </div>
 
-				<div class="row d-flex justify-content-center">
-					<div class="col-10 col-xl-10">
+        </div>
 
+        <!-- Divider Skills -->
+        <div class="divider mt-4 mb-3" id="skills">
+          <h2>Skills</h2>
+        </div>
 
-						<!-- Wearables Project -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
+        <!-- Skills Section -->
+        <div class="skills-section mb-2 px-2">
+          <div class="skill-group">
+            <div class="skill-group-label">Languages</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Stata</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">ML &amp; Modeling</div>
+            <div class="skill-pills">
+              <span class="skill-pill">XGBoost</span>
+              <span class="skill-pill">TensorFlow</span>
+              <span class="skill-pill">scikit-learn</span>
+              <span class="skill-pill">SHAP</span>
+              <span class="skill-pill">Random Forest</span>
+              <span class="skill-pill">LASSO</span>
+              <span class="skill-pill">BiLSTM</span>
+              <span class="skill-pill">SMOTE</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Data Engineering</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Dask</span>
+              <span class="skill-pill">GeoPandas</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Visualization</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Altair</span>
+              <span class="skill-pill">D3.js</span>
+              <span class="skill-pill">Leaflet.js</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Platforms</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Alibaba MaxCompute</span>
+              <span class="skill-pill">Maptitude</span>
+              <span class="skill-pill">Streamlit</span>
+            </div>
+          </div>
+        </div>
 
-								<!-- Image of work-->
-								<div class="mb-3">
-										<img src="./img/wearables_plot.png" class="work-img rounded">
-								</div>
-					
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>From Wearable Data to Actionable Stress Insights</h5>
-									<em>May 2025</em>
-								</div>
+        <!-- Divider Featured Work -->
+        <div class="divider my-4" id="featured-work">
+          <h2>Featured Work</h2>
+        </div>
 
-								<!-- Description -->
-								<p class="mb-2">Built an interactive visualization tool combining wearable signals with user context to reveal stress patterns and guide better interventions.</p>
-								<p class="mb-2"><a href="https://github.com/estherbrown1/WearablesTool" target="_blank">Check out the repository</a> for more details on the data visualization platform.</p  >
-					
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-								</div>
-							</div>
-						</div>
+        <!-- Filter Tabs -->
+        <div class="filter-tabs mb-4 px-2">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+          <button class="filter-btn" data-filter="geospatial">Geospatial</button>
+          <button class="filter-btn" data-filter="visualization">Visualization</button>
+          <button class="filter-btn" data-filter="research">Research</button>
+        </div>
 
+        <!-- Hero Card: GoTo Internship -->
+        <div class="hero-project-wrapper mb-4" data-category="machine-learning">
+          <div class="hero-card rounded">
+            <div class="hero-image-wrapper mb-3">
+              <img src="./img/qris.jpg" class="hero-img rounded">
+              <span class="featured-badge">&#9733; Featured</span>
+            </div>
+            <div class="mb-3 work-title">
+              <h4 class="mb-0">QRIS Scam Detection at GoTo Financial</h4>
+              <em>August 2025</em>
+            </div>
+            <p class="mb-2">
+              Developed a large-scale feature set for QRIS transaction scam detection (3M+ transactions/day) at GoTo Financial (GoPay), integrating transactional, behavioral, geographic, and identity verification signals in Python and SQL (Alibaba MaxCompute).
+            </p>
+            <p class="mb-2">
+              Applied multi-method feature selection (variance threshold, LASSO, random forest, XGBoost) to identify a high-signal feature subset, then extended the production XGBoost model via incremental learning to incorporate new features while retaining prior model knowledge.
+            </p>
+            <p class="mb-3">
+              Conducted precision-recall tradeoff analysis across model configurations and presented threshold recommendations to the business team, contributing to a <b>58.6% reduction in blocked transactions</b> while sustaining scam detection performance.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">XGBoost</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Alibaba MaxCompute</span>
+            </div>
+          </div>
+        </div>
 
+        <!-- Project Grid -->
+        <div class="project-grid">
 
-						<!-- Space Object Identification -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
+          <!-- Alam Sutera Realty -->
+          <div class="project-card-wrapper" data-category="geospatial">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/alsut.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Land Data Quality and Governance at Alam Sutera Realty</h5>
+                <em>January 2026</em>
+              </div>
+              <p class="mb-2">
+                Established the company's first data governance framework for land parcel data by partnering with mapping and legal division heads, building an automated health report that <b>reduced missing data from ~80% to ~10%</b> across a ~20,000-record database. Presented a data maturity assessment and infrastructure recommendations to company directors as part of a digital transformation initiative.
+              </p>
+              <div class="skill-pills mt-auto">
+                <span class="skill-pill">Python</span>
+              <span class="skill-pill">Leaflet.js</span>
+              </div>
+            </div>
+          </div>
 
-								<!-- Image of work-->
-								<div class="mb-3">
-										<img src="./img/chester_architecture.png" class="work-img rounded">
-								</div>
-					
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Space Object Identification with Neural Networks</h5>
-									<em>May 2025</em>
-								</div>
+          <!-- CHESTER -->
+          <div class="project-card-wrapper" data-category="machine-learning">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/chester_architecture.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Space Object Identification with Neural Networks (CHESTER)</h5>
+                <em>May 2025</em>
+              </div>
+              <p class="mb-2">
+                Designed CHESTER, a hierarchical TensorFlow neural network combining a feedforward State Model and Bidirectional LSTM to classify space objects as payloads, rocket bodies, or debris. Trained on Space-Track.org orbital elements using SMOTE and a staged freeze-and-fine-tune procedure, achieving <b>93.66% test accuracy</b> across 3 object categories.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://github.com/tedinspace/space-object-identification" target="_blank">View repository &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">TensorFlow</span>
+              </div>
+            </div>
+          </div>
 
-								<!-- Description -->
-								<p class="mb-2">Developed a neural network model (Contextual History-based Evaluation of Space Trajectories for Entity Recognition or CHESTER) to classify space objects by orbital patterns, integrating temporal data pipelines for improved accuracy.</p>
-								<p class="mb-2"><a href="https://github.com/tedinspace/space-object-identification" target="_blank">Check out the repository</a> for more information on the model!</p  >
-					
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-								</div>
-							</div>
-						</div>
+          <!-- Wearables -->
+          <div class="project-card-wrapper" data-category="visualization">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/wearables_plot.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>From Wearable Data to Actionable Stress Insights</h5>
+                <em>May 2025</em>
+              </div>
+              <p class="mb-2">
+                Built an interactive Streamlit visualization tool combining wearable biometric signals with user-annotated stress events, using Pandas for data cleaning and Altair for interactive time-series visualizations to help users identify personal stress patterns.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://github.com/estherbrown1/WearablesTool" target="_blank">View repository &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Streamlit</span>
+                <span class="skill-pill">Altair</span>
+              </div>
+            </div>
+          </div>
 
+          <!-- Voter Turnout -->
+          <div class="project-card-wrapper" data-category="machine-learning">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/voter_turnout.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Voter Turnout and Demographics in Massachusetts</h5>
+                <em>December 2024</em>
+              </div>
+              <p class="mb-2">
+                End-to-end ML pipeline on 2022 MA voter data: Census block-group demographics via GeoPandas, LASSO feature selection (38 to 13 predictors), tuned random forest regressor <b>(R&sup2; = 0.86 on test set)</b>, and SHAP analysis identifying income, language, ethnicity, and age as key drivers. Deployed as an interactive D3.js data product with choropleth maps and county-level turnout prediction.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">View interactive tool &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">scikit-learn</span>
+                <span class="skill-pill">SHAP</span>
+                <span class="skill-pill">D3.js</span>
+              </div>
+            </div>
+          </div>
 
+          <!-- Tropical Cyclone -->
+          <div class="project-card-wrapper" data-category="research">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/tc_plot.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Simulating Tropical Cyclone Potential Intensity</h5>
+                <em>December 2024</em>
+              </div>
+              <p class="mb-2">
+                Modeled climate change impacts on hurricane intensity using CMIP6 data integrated via intake-esm, applying GEV distribution fitting and Kolmogorov-Smirnov scoring across climate scenarios. Developed the <i>tc_potential</i> and <i>tc_extremes</i> Python library modules with Dask for large-scale parallel climate data processing.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">View repository &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Dask</span>
+              </div>
+            </div>
+          </div>
 
-						<!-- Tropical Cyclone Modeling -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
+          <!-- Banking Compliance -->
+          <div class="project-card-wrapper" data-category="geospatial">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/banking_compliance.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Maptitude Banking Compliance Data</h5>
+                <em>June 2023</em>
+              </div>
+              <p class="mb-2">
+                Processed a 16M+ record, 99-field FFIEC HMDA mortgage loan dataset, aggregating loan-level data to Census tract geographies and integrating multi-source CRA compliance layers to produce analysis-ready geospatial datasets for a commercial banking analytics product.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://www2.caliper.com/store/product/banking-compliance-data/" target="_blank">View product &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Maptitude</span>
+              </div>
+            </div>
+          </div>
 
-								<!-- Image of work-->
-								<div class="mb-3">
-										<img src="./img/tc_plot.png" class="work-img rounded">
-								</div>
-					
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Simulating Tropical Cyclone Potential Intensity</h5>
-									<em>December 2024</em>
-								</div>
+          <!-- Albertsons & Kroger -->
+          <div class="project-card-wrapper" data-category="geospatial">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/albertsons-kroger.webp" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Albertsons &amp; Kroger Geographic Market Analysis</h5>
+                <em>October 2022</em>
+              </div>
+              <p class="mb-2">
+                Joined location and demographic datasets across ~40 Albertsons and Kroger subsidiary brands to analyze merger impact, running radius and drive-time analyses to estimate that 56% of the US mainland population lives within 5 miles of a combined store location, profiling geodemographic overlap across major US cities.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">View blog post &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Maptitude</span>
+              </div>
+            </div>
+          </div>
 
-								<!-- Description -->
-								<!-- <p class="mb-2">This project explores how tropical cyclone strength evolves under varying climate scenarios in the Gulf of Mexico. Leveraging CMIP6 climate model data, we calculate the Maximum Potential Intensity (PI) using key variables like sea surface temperature and atmospheric conditions. The results highlight significant intensification trends, especially under severe climate scenarios, emphasizing the growing risk of stronger storms. The project includes a Python library, <em>tc-potential</em>, with tools for data fetching, analysis, and visualization, offering a streamlined workflow for understanding cyclone dynamics.</p> -->
-								<p class="mb-2">Modeled how climate change influences hurricane intensity using CMIP6 data, creating a Python library for simulation and analysis.</p>
-								<p class="mb-2"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">Check out the repository</a> for more details and installation instructions!</p>
-					
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-								</div>
-							</div>
-						</div>
+          <!-- Senior Thesis -->
+          <div class="project-card-wrapper" data-category="research">
+            <div class="project-card rounded">
+              <div class="mb-3">
+                <img src="./img/parental-migration.png" class="work-img rounded">
+              </div>
+              <div class="mb-2 work-title">
+                <h5>Long-term Effects of Parental Migration on Income: Evidence from Indonesia</h5>
+                <em>May 2021</em>
+              </div>
+              <p class="mb-2">
+                Econometric study using 21 years of panel data from the Indonesian Family Life Survey (IFLS, 22,000 individuals), applying instrumental variable regression using region-level migration rates to estimate the long-term causal impact of parental migration on child income.
+              </p>
+              <p class="mt-auto mb-3"><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">View full paper &rarr;</a></p>
+              <div class="skill-pills">
+                <span class="skill-pill">Stata</span>
+              </div>
+            </div>
+          </div>
 
+        </div><!-- end project-grid -->
 
-						<!-- Voter Turnout -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
+      </div>
+    </div>
+  </div>
 
-								<!-- Image of work-->
-								<div class="mb-3">
-										<img src="./img/voter_turnout.png" class="work-img rounded">
-								</div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Voter Turnout and Demographics in Massachusetts</h5>
-									<em>December 2024</em>
-								</div>
+  <!-- JS file to read data externally -->
+  <script src="js/fetch.js"></script>
 
-								<!-- Description -->
-								<!-- <p class="mb-2">This project examines how demographics influenced voter turnout in Massachusetts during the 2020 election. Using interactive maps and a Random Forest model, it highlights key drivers like income, ethnicity, and language, revealing disparities in voter engagement. Explore the data, compare predictions, and discover actionable strategies to make voting more equitable.</p> -->
-								<p class="mb-2">Integrated voter and Census data with ML models and interactive maps to uncover demographic drivers of turnout disparities.</p>
-								<p class="mb-2"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">Check out the interactive tool</a> to dive deeper into the data!</p>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
 
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-									<div class="tech me-3"><img src="./img/d3.png" class="tech-img me-2">D3.js</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Earthquake Analysis -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
+        const hero = document.querySelector('.hero-project-wrapper');
+        hero.style.display = (filter === 'all' || hero.dataset.category === filter) ? '' : 'none';
 
-								<!-- Image of work-->
-								<div class="mb-3">
-									<img src="./img/earthquakes.webp" class="work-img rounded">
-								</div>
-
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Analyzing Earthquakes with Mapping Software</h5>
-									<em>August 2023</em>
-								</div>
-
-								<!-- Description -->
-								<!-- <p class="mb-2">Using earthquake data from the United States Geological Survey (USGS), I explore how Maptitude mapping software can be used to analyze the locations, frequency, and depth of earthquakes. As an example, I analyzed the relationship between the prevalence of earthquakes and the location of wastewater injection sites in Oklahoma, finding evidence of spatial correlation.</p> -->
-								<p class="mb-2">Used Maptitude to explore earthquake patterns, uncovering links between seismic activity and wastewater injection sites in Oklahoma.</p>
-								<p class="mb-2"><a href="https://www.caliper.com/maptitude/blog/how-mapping-software-helps-us-analyze-earthquakes/default.htm" target="_blank">Check out the blog post</a> to explore further insights!</p>
-
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Banking Compliance Data -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
-
-								<!-- Image of work-->
-								<div class="mb-3">
-									<!-- TODO: ADD IMAGE -->
-									<img src="./img/banking_compliance.png" class="work-img rounded"> 
-								</div>
-
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Maptitude Banking Compliance Data</h5>
-									<em>June 2023</em>
-								</div>
-
-								<!-- Description -->
-								<!-- <p class="mb-2">I processed and integrated banking compliance datasets from the Community Reinvestment Act (CRA) and Home Mortgage Disclosure Act (HMDA), enabling financial institutions to gain actionable insights. The analysis-ready data at county and Census Tract levels supported visualizations of distressed areas, income distribution, and loan trends. Additionally, I developed workflows to streamline the integration of raw Loan Application Register (LAR) data for regulatory analysis.</p> -->
-								<p class="mb-2">Processed and streamlined regulatory datasets (CRA, HMDA, LAR) into analysis-ready geospatial layers for compliance and risk monitoring.</p>
-								<p><a href="https://www2.caliper.com/store/product/banking-compliance-data/" target="_blank">Check out the product description</a> to get the full details!</p>
-
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/python.png" class="tech-img me-2">Python</div>
-									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Albertsons and Kroger -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
-
-								<!-- Image of work-->
-								<div class="mb-3">
-									<img src="./img/albertsons-kroger.webp" class="work-img rounded">
-								</div>
-
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5>Albertsons and Kroger Geographic Market Analysis</h5>
-									<em>October 2022</em>
-								</div>
-
-								<!-- Description -->
-								<!-- <p class="mb-2">To estimate the impact of the Albertsons and Kroger merger, I mapped Albertsons' and Kroger's locations (including their subsidiary brands), compared their geographic overlap, and estimated the population and demographics of those near the stores. I found that there were areas of significant overlap between the two companies (e.g. Los Angeles, Dallas, Washington DC) but that the companies' locations target different demographic segments.</p> -->
-								<p class="mb-2">Analyzed store overlaps and demographics to assess merger impacts, with results published in a blog recognized by the Financial Times.</p>
-								<p><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">Check out the blog post</a> to get the full story!</p>
-
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/maptitude.png" class="tech-img rounded me-2">Maptitude</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Senior Thesis -->
-						<div class="container my-4 g-0">
-							<div class="work-card rounded">
-
-								<!-- Image of work-->
-								<div class="mb-3">
-									<img src="./img/parental-migration.png" class="work-img rounded">
-								</div>
-
-								<!-- Title and Date -->
-								<div class="mb-2 work-title">
-									<h5 class="work-title">Long-term Effects of Parental Migration on Income:
-										Evidence from Indonesia</h5>
-									<em>May 2021</em>
-								</div>
-
-								<!-- Description -->
-								<!-- <p class="mb-2">For my undergraduate senior thesis, I sought to estimate the impact of parental migration on their children's future income. I used the Indonesian Family Life Survey (IFLS), a panel dataset examining the lives of 22,000 individuals over the span of 21 years and ran an instrumental variable regression using region-level migration rates to predict parental migration. Although the results of the study were ambiguous, with large standard errors affecting the coefficient of interest, I was able to show that a significant portion of parental migration in the IFLS was driven by non-labor reasons.</p> -->
-								<p class="mb-2">Conducted an econometric study using 21 years of panel data (IFLS) to estimate the long-term impact of parental migration on child income.</p>
-								<p><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">Check out the full paper</a> to review the complete findings!</p>
-
-								<!-- Badges -->
-								<div class="tech-container mt-2">
-									<div class="tech me-3"><img src="./img/stata.svg" class="tech-img me-2">STATA</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-	<!-- JS file to read data externally -->
-	<script src="js/fetch.js"></script>
+        document.querySelectorAll('.project-card-wrapper').forEach(card => {
+          card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

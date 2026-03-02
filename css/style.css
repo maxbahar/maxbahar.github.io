@@ -1,32 +1,47 @@
+/* ============================================================
+   Color tokens — edit here to retheme the whole page
+   ============================================================ */
+
+:root {
+    --accent:       #4A72BE;   /* primary interactive color */
+    --accent-hover: #3560A4;   /* hover / active state */
+    --text:         #0F172A;   /* main body text */
+    --text-muted:   #64748B;   /* dates, labels, secondary text */
+    --divider:      #CBD5E1;   /* horizontal rule color */
+    --card-bg:      #F8FAFC;   /* project card background */
+    --pill-bg:      #EEF2F9;   /* skill pill fill */
+    --pill-border:  #C0CEEA;   /* skill pill outline */
+}
+
+
 /* General CSS */
 
 h1 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
 }
+
 h2 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: normal;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
 }
 
 p {
     text-align: justify;
 }
 
-b {
-    color: #ED6A5A;
-}
-
 a {
-    color: #ED6A5A;
+    color: var(--accent);
     transition: color 0.2s ease, background-color 0.2s ease;
     font-weight: bold;
 }
+
 a:hover {
-    color: #754668;
+    color: var(--accent-hover);
 }
 
 
@@ -38,105 +53,242 @@ a:hover {
     align-items: baseline;
     padding: 10px;
     font-size: 1.5em;
-
 }
+
 .header a {
     text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    color: #7899D4;
-    transition: color 0.2s ease, background-color 0.2s ease;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    transition: color 0.2s ease;
 }
+
 .header a:hover {
-    color: #ED6A5A;
+    color: var(--accent-hover);
 }
+
 .spacer {
     margin: 0px 10px;
 }
 
-/* Bio CSS */
-
-.btn {
-    font-family: 'Roboto Mono', monospace !important;
-}
 
 /* Divider CSS */
 
 .divider {
     display: flex;
     align-items: center;
-    /* margin: 20px 0px; */
 }
+
 .divider::before, .divider::after {
     content: "";
     flex: 1;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--divider);
 }
+
 .divider:not(:empty)::before {
     margin-right: 1.25em;
     flex: 0.05;
 }
+
 .divider:not(:empty)::after {
     margin-left: 1.25em;
 }
 
+
 /* Intro Buttons */
 
-.social-btns a {
+.social-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: normal;
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+    background: white;
+    color: var(--accent);
     text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-pill:hover {
+    background-color: var(--accent);
     color: white;
 }
-.social-btns .btn {
-    background-color: #7899D4;
-    border-color: #7899D4;
-}
-.social-btns .btn:hover {
-    background-color: #ED6A5A;
-    border-color: #ED6A5A;
-}
+
 .bio-img {
     max-width: 300px;
     width: 100%;
 }
+
 .intro {
-    font-family: 'Roboto Mono'; 
+    font-family: 'JetBrains Mono', monospace;
     font-style: italic;
     font-size: 1.2rem;
 }
 
+
 /* Card CSS */
-
-.work-card {
-    padding: 16px;
-    background-color: #f1f1f1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.work-card:hover {
-    transform: scale(1.01); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
 
 .work-img {
     width: 100%;
     height: auto;
 }
 
-.work-title > h5{
-    font-family: 'Roboto Mono', monospace;
+.work-title > h4,
+.work-title > h5 {
+    font-family: 'JetBrains Mono', monospace;
 }
 
-.tech-container .tech {
-    font-family: 'Roboto Mono', monospace;
+.work-title em {
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
-.tech-container {
+
+/* Skills Section */
+
+.skills-section {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
-.tech-img {
-    height: 1.5rem;
-    width: auto;
-    max-width: 1.5rem;
+.skill-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.skill-group-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 130px;
+    padding-top: 4px;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skill-pill {
+    background-color: var(--pill-bg);
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--pill-border);
+}
+
+
+/* Filter Tabs */
+
+.filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+    background: white;
+    color: var(--accent);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--accent);
+    color: white;
+}
+
+
+/* Hero Card */
+
+.hero-card {
+    padding: 20px;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: scale(1.005);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hero-image-wrapper {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--accent);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+
+/* Project Grid */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.project-card-wrapper {
+    display: flex;
+}
+
+.project-card {
+    padding: 16px;
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-group {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .skill-group-label {
+        min-width: unset;
+    }
 }
