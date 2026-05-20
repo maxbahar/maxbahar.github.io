@@ -11,6 +11,21 @@
     --card-bg:      #F8FAFC;   /* project card background */
     --pill-bg:      #EEF2F9;   /* skill pill fill */
     --pill-border:  #C0CEEA;   /* skill pill outline */
+    --bg:           #ffffff;   /* page background */
+    --surface:      #ffffff;   /* button / input surfaces */
+}
+
+[data-theme="dark"] {
+    --accent:       #6B97CC;
+    --accent-hover: #85AEDD;
+    --text:         #EDF2F7;
+    --text-muted:   #8896AE;
+    --divider:      #242C3D;
+    --card-bg:      #111520;
+    --pill-bg:      #0E1220;
+    --pill-border:  #1D2E50;
+    --bg:           #090C15;
+    --surface:      #090C15;
 }
 
 
@@ -28,6 +43,8 @@ h2 {
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text);
+    background-color: var(--bg);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 p {
@@ -71,6 +88,29 @@ a:hover {
 }
 
 
+/* Theme Toggle */
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--accent);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-hover);
+}
+
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+
 /* Divider CSS */
 
 .divider {
@@ -103,7 +143,7 @@ a:hover {
     padding: 5px 16px;
     border-radius: 20px;
     border: 2px solid var(--accent);
-    background: white;
+    background: var(--surface);
     color: var(--accent);
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -198,7 +238,7 @@ a:hover {
     padding: 5px 16px;
     border-radius: 20px;
     border: 2px solid var(--accent);
-    background: white;
+    background: var(--surface);
     color: var(--accent);
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
